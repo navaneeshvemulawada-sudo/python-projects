@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS pygame;
+
+USE pygame;
+
+CREATE TABLE IF NOT EXISTS player_scores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    player_name VARCHAR(100),
+    time_taken FLOAT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
